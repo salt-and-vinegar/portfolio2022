@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap');
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +7,201 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  width: calc(100vw - 160px);
+  height: calc(100vh - 120px);
+  padding: 60px 80px;
+  background-color: #f3f3f3;
+}
+
+#mainBg{
+  position: absolute;
+  width: calc(100vw - 160px);
+  height: calc(100vh - 120px);
+  background-image: url(../public/background.png);
+  background-position: center center;
+  background-size: 50%;
+  background-repeat: no-repeat;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+h1{
+  margin:0;
+}
+
+ul,li{
+  list-style: none;
+}
+
+#menu{
+  position: absolute;
+  right: 80px;
+  top: 60px;
+}
+
+/* #navigation{
+  display: none;
+} */
+
+#year{
+  position: absolute;
+  left: 80px;
+  bottom: 60px;
+  font-family: 'Antic Didone', serif;
+  font-weight: bold;
+  font-size: 16pt;
+}
+
+#portfolio{
+  position: absolute;
+  right: 80px;
+  bottom: 60px;
+}
+
+#youtube{
+  position: absolute;
+  right: 80px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#instagram a,
+#youtube a{
+  display: block;
+}
+
+
+#instagram{
+  position: absolute;
+  left: 80px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* menu open */
+
+#menu-close{
+  position: absolute;
+  right: 82px;
+  top: 60px;
+  cursor: pointer;
+  font-size: 18pt;
+  font-weight: bold;
+  font-family: 'Antic Didone', serif;
+}
+
+.menu-container {
+  border-radius: 100%;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  right: 0;
+  top: -120px;
+  transition: all 0.3s;
+  border-radius: 50%;
+}
+
+.menu-container.full-menu {
+  background-color: #f3f3f3;
+  border-radius: 0;
+  padding: 0 !important;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  right: -80px;
+  top: -60px;
+  transition: all 0.3s;
+  z-index: 1;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+  color: #333333;
+}
+.overlay.open {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+  z-index: 2;
+}
+.overlay.open li {
+  animation: fadeInRight .5s ease forwards;
+  animation-delay: .35s;
+}
+.overlay.open li:nth-of-type(2) {
+  animation-delay: .4s;
+}
+.overlay.open li:nth-of-type(3) {
+  animation-delay: .45s;
+}
+.overlay.open li:nth-of-type(4) {
+  animation-delay: .50s;
+}
+.overlay nav {
+  font-size: 3.2em;
+  position: relative;
+  width: 80%;
+  height: 70%;
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: 400;
+  text-align: left;
+}
+.overlay ul {
+list-style: none;
+padding: 0;
+margin: auto auto;
+display: inline-block;
+position: relative;
+height: 100%;
+}
+.overlay ul li {
+display: block;
+height: 25%;
+height: calc(100% / 4);
+min-height: 50px;
+position: relative;
+opacity: 0;
+}
+.overlay ul li a {
+display: block;
+position: relative;
+color: #333333;
+text-decoration: none;
+overflow: hidden;
+opacity: 1;
+font-family: 'Antic Didone', serif;
+font-weight: bold;
+transform: scale(1);
+letter-spacing: 2px;
+transition: all 0.3s;
+}
+.overlay ul li a:hover, .overlay ul li a:focus, .overlay ul li a:active {
+opacity: 1;
+transform: scale(1.1);
+transition: all 0.3s;
+}
+
+@keyframes fadeInRight {
+0% {
+  opacity: 0;
+  left: 20%;
+}
+100% {
+  opacity: 1;
+  left: 0;
+}
 }
