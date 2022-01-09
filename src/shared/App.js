@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import {Routes,Route } from 'react-router-dom';
+<<<<<<< HEAD
 // import GlobalStyles from '../components/globalStyles'
+=======
+import GlobalStyles from "../components/globalStyles";
+>>>>>>> 0f7f0f7166035622de6d7e1591bf0fe44fdefb10
 import { Main, About, Work, Contact } from '../pages';
 
 class App extends Component {
