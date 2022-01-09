@@ -1,13 +1,12 @@
-import React, { Component } from "react";
+import React from "react";
 import Header from "../components/header";
+import ContactForm from "../components/contact_form";
 
 const Contact =()=>{
 	return(
         <>
 		<Header></Header>
-        <div className="contact-form">
-            
-        </div>
+        <ContactForm></ContactForm>
         </>
 	);
 };
