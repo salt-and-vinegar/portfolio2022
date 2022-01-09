@@ -6,7 +6,7 @@
   position: absolute;
   width: calc(100vw - 160px);
   height: calc(100vh - 120px);
-  background-image: url("/background.png");
+  /* background-image: url("/background.png"); */
   background-position: center center;
   background-size: 50%;
   background-repeat: no-repeat;
