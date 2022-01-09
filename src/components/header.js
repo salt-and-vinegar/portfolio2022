@@ -7,7 +7,6 @@ class Header extends Component {
         super(props);
         this.state = { showing : false};
       }
-    
 
     render(){
         const logoUrl = "logo_image.png";

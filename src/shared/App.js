@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {Routes,Route } from 'react-router-dom';
-import GlobalStyles from "components/globalStyles";
+// import GlobalStyles from '../components/globalStyles'
 import { Main, About, Work, Contact } from '../pages';
 
 class App extends Component {
@@ -13,7 +13,7 @@ class App extends Component {
                 <Route path="/works" element={ <Work></Work> } />
                 <Route path="/contacts" element={ <Contact></Contact> } />
 			</Routes>
-            <GlobalStyles />
+            {/* <GlobalStyles /> */}
             </>
         );
     }
