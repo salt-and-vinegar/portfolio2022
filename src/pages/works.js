@@ -3,7 +3,7 @@ import Header from "../components/header";
 
 const Work =()=>{
 	return(
-		<Header></Header>
+		<Header title="Works"></Header>
 	);
 };
 

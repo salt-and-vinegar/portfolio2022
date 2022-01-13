@@ -1,0 +1,154 @@
+.about-container{
+    height: calc(90% - 66px);
+    margin: 32px auto;
+    border: 1px solid #333;
+}
+
+.about-menu{
+    display: inline-block;
+    width: 10%;
+    vertical-align: top;
+    height: 100%;
+    border-right: 1px solid #333;
+}
+
+.about-menu li{
+    width: 100%;
+    text-align: center;
+    border-bottom : 1px solid #333;
+    font-size: 16pt;
+}
+
+.about-menu li a{
+    display: flex;
+    height: 80px;
+    padding: 16px 0;
+    justify-content: center;
+    flex-direction: column;
+    color: #666666;
+}
+
+.about-menu li a.active{
+    background-color: #3170b3;
+    color: #fff;
+    font-weight: bold;
+}
+
+.about-cont{
+    display: inline-block;
+    vertical-align: top;
+    width: calc(89% - 180px);
+    padding : 65px 90px;
+    height: calc(100% - 130px);
+    font-family: 'Noto Sans KR', sans-serif;
+    letter-spacing: -.5px;
+}
+
+.about-cont-title{
+    display: inline-block;
+    font-size : 30pt;
+    line-height: 1.4;
+    height: 50%;
+    font-family: 'Antic Didone', serif;
+    letter-spacing:1px;
+}
+
+.about-cont-info{
+    vertical-align: bottom;
+}
+
+.about-cont-left{
+    display: inline-block;
+    height: 100%;
+    width: 40%;
+    vertical-align: top;
+}
+
+.about-cont-left > div{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.about-cont-info{
+    font-size: 13pt;
+}
+
+.about-cont-info p{
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+.about-cont-info ul{
+    display: block;
+    margin-top: 32px;
+}
+
+.about-cont-info li{
+    display: block;
+    font-size: 13pt;
+    font-weight: 400;
+}
+
+.about-cont-right{
+    display: inline-block;
+    height: 100%;
+    width: 59%;
+    vertical-align: top;
+    text-align: right;
+    font-size: 13pt;
+}
+
+.about-cont-right img{
+    width: 300px;
+    margin-bottom: 32px;
+}
+
+.about-cont-right p{
+    margin-top: 32px;
+    line-height: 1.8;
+}
+
+.about-cont-right-2{
+    display: inline-block;
+    height: 100%;
+    width: 59%;
+    vertical-align: top;
+    font-size: 13pt;
+}
+
+
+.about-cont-right-2 ul{
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+}
+
+.about-cont-right-2 li{
+    margin-bottom: 16px;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+.about-cont-right-3{
+    display: inline-block;
+    height: 100%;
+    width: 59%;
+    vertical-align: top;
+    font-size: 13pt;
+}
+
+.about-cont-right-3 li{
+    margin-bottom: 32px;
+}
+
+.about-cont-right-3 p{
+    line-height: 2;
+    font-weight: 400;
+    letter-spacing: .5px;
+}
+
+.about-cont-right-3 p span{
+    font-weight: bold;
+}

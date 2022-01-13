@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antic+Didone&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 
 body {
   margin: 0;
@@ -9,6 +9,18 @@ body {
   height: calc(100vh - 120px);
   padding: 60px 80px;
   background-color: #f3f3f3;
+  
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+ul,li{
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 input,button{
@@ -70,6 +82,9 @@ ul,li{
   position: absolute;
   right: 80px;
   bottom: 60px;
+  font-family: 'Antic Didone', serif;
+  font-weight: bold;
+  font-size: 16pt;
 }
 
 #youtube{
@@ -316,4 +331,16 @@ transition: all 0.3s;
 .form-cont input:focus,
 .form-cont textarea:focus{
   outline : 1px solid #000;
+}
+
+.badge{
+  display: inline-block;
+  width: 80px;
+  padding: 4px;
+  border: 1px solid #333;
+  text-align: center;
+  font-size: 10pt;
+  border-radius: 50px;
+  margin-right: 8px;
+  margin-top: 8px;
 }

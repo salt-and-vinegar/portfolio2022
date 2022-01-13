@@ -31,11 +31,7 @@ class Header extends Component {
                     <Nav></Nav>
                 </div>
                 <div id="year">{ yearDate }</div>
-                <div id="portfolio">
-                    <Link to="/works">
-                        <img src={portUrl} alt="move to works"/>
-                    </Link>
-                </div>
+                <div id="portfolio">{this.props.title}</div>
             </div>
         )
     }
