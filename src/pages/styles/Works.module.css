@@ -1,0 +1,9 @@
+.works-container{
+    height: calc(90% - 66px);
+    margin: 32px auto;
+    border: 1px solid #333;
+}
+
+.works-list-cont{
+    display: inline-block;
+}

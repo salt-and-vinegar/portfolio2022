@@ -234,10 +234,14 @@ transition: all 0.3s;
 /* contacts */
 
 .form-wrap{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-55%);
   width: calc(70% - 96px);
-  height: calc(90% - 156px);
+  /* height: calc(90% - 156px); */
   padding: 48px;
-  margin: 30px auto;
+  margin: 0 auto;
   border: 1px solid #333;
 }
 

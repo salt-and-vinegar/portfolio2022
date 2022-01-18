@@ -14,15 +14,15 @@ class Edu extends Component{
 		}
 	}
   render(){
-    var eduLists = [];
-		var edus = this.state.edus;
-		var i = 0;
+    let eduLists = [];
+		let edus = this.state.edus;
+		let i = 0;
 
 		while(i < edus.length){
-      var eduId = edus[i].id;
-			var eduTerm = edus[i].term;
-			var eduPlace = edus[i].place;
-      var eduTitle = edus[i].title;
+      let eduId = edus[i].id;
+			let eduTerm = edus[i].term;
+			let eduPlace = edus[i].place;
+      let eduTitle = edus[i].title;
 			eduLists.push(
 				<li 
 					key={eduId} 
