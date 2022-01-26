@@ -3,8 +3,7 @@ import Header from "../components/header";
 import { readString } from 'react-papaparse'
 import csvfile from './works/workslist.csv';
 import styles from './styles/Works.module.css';
-
-
+import WorkCard from "../components/work_card";
 
 
 class Work extends Component{
@@ -39,26 +38,18 @@ class Work extends Component{
 				let workPart = workList[i].p_works;
 				//여기서 workSkill array는 어떻게 분할해서 리스트로 붙일지 봐야함
 				workArr.push(
-					<dl 
-						key={i}
-						className={styles['works-list-cont']}
-					>
-					<dt>{workName}</dt>
-					<dd>
-						<ul>{workSkill}</ul>
-						<div>{workTime}</div>
-						<div>{workPart}</div>
-					</dd>
-					</dl>
+					<li key={i}>
+						<WorkCard name={workName} skill={workSkill} time={workTime} part={workPart}></WorkCard>
+					</li>
 				);
 			}
 		}
 		return(
 			<>
 			<Header title="Works"></Header>
-			<div className={styles['works-container']}>
+			<ul className={styles['works-container']}>
 				{workArr}
-			</div>
+			</ul>
 			</>
 		);
 	}
