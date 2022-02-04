@@ -348,3 +348,8 @@ transition: all 0.3s;
   margin-right: 8px;
   margin-top: 8px;
 }
+
+.badge.large{
+  font-size: 12pt;
+  width: calc(25% - 20px);
+}

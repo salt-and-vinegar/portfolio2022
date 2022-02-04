@@ -8,11 +8,11 @@ class WorkCard extends Component {
 
     render(){
         
-        let workSkill = this.props.skill
+        let workSkill = this.props.skill;
         let workSkillArr = [];
         for(let i in workSkill){
             workSkillArr.push(
-                <li className="badge">
+                <li key={i} className="badge large">
                     {this.props.skill[i]}
                 </li>
             );
@@ -20,11 +20,13 @@ class WorkCard extends Component {
         return(
             <>
               <div className={styles['works-cont']}>
-                 <span className={styles['works-term']}>{this.props.time}</span>
-                 <span className={styles['works-part']}>{this.props.part}</span>
-                 <h3>{this.props.name}</h3>
-                 <ul>{workSkillArr}</ul>
-                 <p></p>
+                 <div className={styles['work-top']}>
+                    <span className={styles['works-term']}>{this.props.time}</span>
+                    <span className={styles['works-part']}>{this.props.part}</span>
+                 </div>
+                 <h3 className={styles['works-title']}>{this.props.name}</h3>
+                 <ul className={styles['works-skill-wrap']}>{workSkillArr}</ul>
+                 <p className={styles['works-detail']}>{this.props.paragraph}</p>
               </div>
             </>
         )

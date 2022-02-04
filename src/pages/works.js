@@ -4,6 +4,7 @@ import { readString } from 'react-papaparse'
 import csvfile from './works/workslist.csv';
 import styles from './styles/Works.module.css';
 import WorkCard from "../components/work_card";
+import HorizontalScroll from 'react-scroll-horizontal'
 
 
 class Work extends Component{
@@ -24,8 +25,11 @@ class Work extends Component{
 		const data = result.data;
 		this.setState({data: data}); 
 	  }
-
+	  
+	 
+	 
 	render(){	
+		
 		let workArr = [];
 		if(this.state === null){
 
@@ -36,23 +40,28 @@ class Work extends Component{
 				let workSkill = (workList[i].p_skills).split(",");
 				let workTime = workList[i].p_time;
 				let workPart = workList[i].p_works;
+				let workPara = workList[i].p_detail;
 				//여기서 workSkill array는 어떻게 분할해서 리스트로 붙일지 봐야함
 				workArr.push(
-					<li key={i}>
-						<WorkCard name={workName} skill={workSkill} time={workTime} part={workPart}></WorkCard>
-					</li>
+				
+						<WorkCard key={i} name={workName} skill={workSkill} time={workTime} part={workPart} paragraph={workPara}></WorkCard>
+					
 				);
 			}
 		}
 		return(
 			<>
 			<Header title="Works"></Header>
-			<ul className={styles['works-container']}>
+			<HorizontalScroll
+			 className={styles['works-container']}
+			>
 				{workArr}
-			</ul>
+        	</HorizontalScroll>
 			</>
 		);
 	}
 }
 
+
 export default Work;
+
