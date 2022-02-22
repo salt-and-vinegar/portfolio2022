@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Antic+Didone&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Antic+Didone&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Yuji+Syuku&display=swap');
 
 body {
   margin: 0;
-  font-family: 'Antic Didone', serif;
+  font-family: 'DM Serif Display', serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   width: calc(100vw - 160px);
@@ -24,7 +25,7 @@ ul,li{
 }
 
 input,button{
-  font-family: 'Antic Didone', serif;
+  font-family: 'DM Serif Display', serif;
   box-shadow : 0;
 }
 
@@ -35,15 +36,18 @@ button{
 #root{
   height : 100%;
 }
-
+/* 다음에 메인 바꿀 때 더 나은 방법으로 바꾸기 */
 #mainBg{
   position: absolute;
+  left: 50%;
+  top: 50%;
   width: calc(100vw - 160px);
   height: calc(100vh - 120px);
   background-image: url("../public/background.png");
   background-position: center center;
   background-size: 50%;
   background-repeat: no-repeat;
+  transform: translate(-50%, -50%);
 }
 
 code {
@@ -59,10 +63,19 @@ ul,li{
   list-style: none;
 }
 
+#indexLogo a{
+  font-size: 14pt;
+  color: #333;
+  text-decoration: none; 
+  vertical-align: top;
+}
+
 #menu{
   position: absolute;
   right: 80px;
   top: 60px;
+  font-size: 14pt;
+  z-index: 1;
 }
 
 /* #navigation{
@@ -73,18 +86,18 @@ ul,li{
   position: absolute;
   left: 80px;
   bottom: 60px;
-  font-family: 'Antic Didone', serif;
+  font-family: 'DM Serif Display', serif;
   font-weight: bold;
-  font-size: 16pt;
+  font-size: 14pt;
 }
 
 #portfolio{
   position: absolute;
   right: 80px;
   bottom: 60px;
-  font-family: 'Antic Didone', serif;
+  font-family: 'DM Serif Display', serif;
   font-weight: bold;
-  font-size: 16pt;
+  font-size: 14pt;
 }
 
 #youtube{
@@ -109,14 +122,14 @@ ul,li{
 
 /* menu open */
 
-#menu-close{
+#menuClose{
   position: absolute;
   right: 82px;
   top: 60px;
   cursor: pointer;
-  font-size: 18pt;
+  font-size: 14pt;
   font-weight: bold;
-  font-family: 'Antic Didone', serif;
+  font-family: 'DM Serif Display', serif;
 }
 
 .menu-container {

@@ -6,7 +6,7 @@
 
 .about-menu{
     display: inline-block;
-    width: 10%;
+    width: 150px;
     vertical-align: top;
     height: 100%;
     border-right: 1px solid #333;
@@ -16,7 +16,7 @@
     width: 100%;
     text-align: center;
     border-bottom : 1px solid #333;
-    font-size: 16pt;
+    font-size: 14pt;
 }
 
 .about-menu li a{
@@ -37,8 +37,8 @@
 .about-cont{
     display: inline-block;
     vertical-align: top;
-    width: calc(89% - 180px);
-    padding : 65px 90px;
+    width: calc(100% - 332px);
+    padding: 65px 90px;
     height: calc(100% - 130px);
     font-family: 'Noto Sans KR', sans-serif;
     letter-spacing: -.5px;

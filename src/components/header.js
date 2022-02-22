@@ -17,17 +17,19 @@ class Header extends Component {
         const { showing } = this.state;
         return(
             <div>
-                <h1>
+                <h1 id="indexLogo">
                     <Link to="/">
-                        <img src={logoUrl} alt="logo"/>
+                        {/* <img src={logoUrl} alt="logo"/> */}
+                        Nayoung Kim
                     </Link>
                 </h1>
                 <div id="menu" onClick={() => this.setState({ showing: !showing })}>
-                    <img src={menuUrl} alt="openMenu"/>
+                    {/* <img src={menuUrl} alt="openMenu"/> */}
+                    Menu
                     <div className={(showing ? 'menu-container full-menu' : 'menu-container')}></div>
                 </div>
                 <div id="navigation" className={(showing ? 'overlay open' : 'overlay')} style={{ display: (showing ? 'block' : 'none') }}>
-                    <div id="menu-close"  onClick={() => this.setState({ showing: !showing })}>Close</div>
+                    <div id="menuClose"  onClick={() => this.setState({ showing: !showing })}>Close</div>
                     <Nav></Nav>
                 </div>
                 <div id="year">{ yearDate }</div>

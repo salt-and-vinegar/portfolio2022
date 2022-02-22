@@ -7,7 +7,6 @@ class WorkCard extends Component {
       }
 
     render(){
-        
         let workSkill = this.props.skill;
         let workSkillArr = [];
         for(let i in workSkill){

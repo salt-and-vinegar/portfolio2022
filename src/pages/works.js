@@ -25,8 +25,6 @@ class Work extends Component{
 		const data = result.data;
 		this.setState({data: data}); 
 	  }
-	  
-	 
 	 
 	render(){	
 		
@@ -43,7 +41,6 @@ class Work extends Component{
 				let workPara = workList[i].p_detail;
 				//여기서 workSkill array는 어떻게 분할해서 리스트로 붙일지 봐야함
 				workArr.push(
-				
 						<WorkCard key={i} name={workName} skill={workSkill} time={workTime} part={workPart} paragraph={workPara}></WorkCard>
 					
 				);
