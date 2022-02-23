@@ -11,7 +11,7 @@ class WorkCard extends Component {
         let workSkillArr = [];
         for(let i in workSkill){
             workSkillArr.push(
-                <li key={i} className="badge large">
+                <li key={i} className="badge">
                     {this.props.skill[i]}
                 </li>
             );

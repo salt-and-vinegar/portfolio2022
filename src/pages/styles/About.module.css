@@ -1,6 +1,6 @@
 .about-container{
-    height: calc(90% - 66px);
-    margin: 32px auto;
+    height: calc(96% - 66px);
+    /* margin: 32px auto; */
     border: 1px solid #333;
 }
 
@@ -46,7 +46,7 @@
 
 .about-cont-title{
     display: inline-block;
-    font-size : 30pt;
+    font-size : 28pt;
     line-height: 1.4;
     height: 50%;
     font-family: 'Antic Didone', serif;
@@ -72,7 +72,7 @@
 }
 
 .about-cont-info{
-    font-size: 13pt;
+    font-size: 11pt;
 }
 
 .about-cont-info p{
@@ -87,7 +87,7 @@
 
 .about-cont-info li{
     display: block;
-    font-size: 13pt;
+    font-size: 11pt;
     font-weight: 400;
 }
 
@@ -97,16 +97,16 @@
     width: 59%;
     vertical-align: top;
     text-align: right;
-    font-size: 13pt;
+    font-size: 11pt;
 }
 
 .about-cont-right img{
-    width: 300px;
-    margin-bottom: 32px;
+    width: 150px;
+    /* margin-bottom: 16px; */
 }
 
 .about-cont-right p{
-    margin-top: 32px;
+    margin-top: 16px;
     line-height: 1.8;
 }
 
@@ -115,7 +115,7 @@
     height: 100%;
     width: 59%;
     vertical-align: top;
-    font-size: 13pt;
+    font-size: 11pt;
 }
 
 
@@ -136,11 +136,11 @@
     height: 100%;
     width: 59%;
     vertical-align: top;
-    font-size: 13pt;
+    font-size: 11pt;
 }
 
 .about-cont-right-3 li{
-    margin-bottom: 32px;
+    margin-bottom: 4px;
 }
 
 .about-cont-right-3 p{
